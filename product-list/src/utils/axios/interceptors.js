@@ -10,7 +10,7 @@ import { Loader } from "../../assets/styles/common";
 function Interceptor({ toggleLoader, errMsg, isLoading, errorMsg }) {
   useEffect(() => {
     // Add a request interceptor
-    api.interceptors.request.use(
+    const requestInterceptors = api.interceptors.request.use(
       function (config) {
         toggleLoader();
         return config;
@@ -21,7 +21,7 @@ function Interceptor({ toggleLoader, errMsg, isLoading, errorMsg }) {
     );
 
     // Add a response interceptor
-    api.interceptors.response.use(
+    const responseInterceptors = api.interceptors.response.use(
       function (response) {
         toggleLoader();
         return response;
@@ -30,6 +30,11 @@ function Interceptor({ toggleLoader, errMsg, isLoading, errorMsg }) {
         errMsg(error.message);
       }
     );
+
+    return () => {
+      api.interceptors.request.eject(requestInterceptors);
+      api.interceptors.response.eject(responseInterceptors);
+    };
   }, [toggleLoader, errMsg]);
 
   useEffect(() => {

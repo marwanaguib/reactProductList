@@ -1,17 +1,21 @@
 import { connect } from "react-redux";
 
-import { getProducts } from "../../../store/actions/features/products";
+import {
+  getProducts,
+  setPageIndex,
+} from "../../../store/actions/features/products";
 
 function mapStateToProps(state) {
   return {
-    // accountState: getAccountState(state),
-    // apiKeys: getApiKeysState(state),
-    // colorScheme: state.colorScheme,
+    products: state.products.items,
+    count: state.products.count,
+    pageIndex: state.products.pageIndex,
   };
 }
 
 const mapDispatchToProps = {
   getProducts,
+  setPageIndex,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps);

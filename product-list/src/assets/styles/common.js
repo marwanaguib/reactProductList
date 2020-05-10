@@ -5,6 +5,9 @@ body {
   margin: 0;
   padding:0;
 }
+*{
+  box-sizing:border-box;
+}
 `;
 
 export const H1 = styled.h1`
@@ -55,4 +58,10 @@ export const Loader = styled.div`
       transform: rotate(360deg);
     }
   }
+`;
+
+export const DFlex = styled.div`
+  display: flex;
+  justify-content: ${(props) => props.justify};
+  align-items: ${(props) => props.align};
 `;

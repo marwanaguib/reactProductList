@@ -1,6 +1,7 @@
 import api from "../../../utils/axios";
 
 export const GET_PRODUCTS_SUCCESS = "GET_PRODUCTS_SUCCESS";
+export const SET_PAGE_INDEX = "SET_PAGE_INDEX";
 
 export const getProductsSuccess = (payload) => {
   return {
@@ -9,12 +10,19 @@ export const getProductsSuccess = (payload) => {
   };
 };
 
-export const getProductsAPI = () => (dispatch) => {
-  return api.get(`/posts`, { data: {} });
+export const getProductsAPI = (index) => (dispatch) => {
+  return api.get(`/products/${index}`, { data: {} });
 };
 
-export const getProducts = () => (dispatch) => {
-  return dispatch(getProductsAPI()).then((response) =>
+export const getProducts = (index) => (dispatch) => {
+  return dispatch(getProductsAPI(index)).then((response) =>
     response ? dispatch(getProductsSuccess(response.data)) : ""
   );
+};
+
+export const setPageIndex = (index) => {
+  return {
+    type: SET_PAGE_INDEX,
+    index,
+  };
 };
