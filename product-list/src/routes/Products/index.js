@@ -1,11 +1,14 @@
 import React from "react";
 
 import MainTemplate from "../../templates/main";
+import ProductsList from "../../components/features/products";
 
-export default function Products() {
+const Products = () => {
   return (
     <MainTemplate>
-      <div>Product Page</div>
+      <ProductsList />
     </MainTemplate>
   );
-}
+};
+
+export default Products;

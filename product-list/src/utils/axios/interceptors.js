@@ -1,49 +1,48 @@
 import api from "./index";
 import { connect } from "react-redux";
-import React from "react";
+import React, { useEffect } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import { toggleLoader, errMsg } from "../../store/actions/utils/axios";
+import { Loader } from "../../assets/styles/common";
 
-function Interceptor(props) {
-  // Add a request interceptor
-  api.interceptors.request.use(
-    function (config) {
-      // Do something before request is sent
-      props.toggleLoader();
-      return config;
-    },
-    function (error) {
-      // Do something with request error
-      props.errMsg(error.message);
-      // return Promise.reject(error);
-    }
-  );
+function Interceptor({ toggleLoader, errMsg, isLoading, errorMsg }) {
+  useEffect(() => {
+    // Add a request interceptor
+    api.interceptors.request.use(
+      function (config) {
+        toggleLoader();
+        return config;
+      },
+      function (error) {
+        errMsg(error.message);
+      }
+    );
 
-  // Add a response interceptor
-  api.interceptors.response.use(
-    function (response) {
-      props.toggleLoader();
-      // Any status code that lie within the range of 2xx cause this function to trigger
-      // Do something with response data
-      return response;
-    },
-    function (error) {
-      // Any status codes that falls outside the range of 2xx cause this function to trigger
-      // Do something with response error
-      props.errMsg(error.message);
-      // return Promise.reject(error);
+    // Add a response interceptor
+    api.interceptors.response.use(
+      function (response) {
+        toggleLoader();
+        return response;
+      },
+      function (error) {
+        errMsg(error.message);
+      }
+    );
+  }, [toggleLoader, errMsg]);
+
+  useEffect(() => {
+    if (errorMsg && errorMsg !== "") {
+      toast(errorMsg, {});
     }
-  );
+  }, [errorMsg]);
 
   return (
-    <div>
-      {props.isLoading ? <div className="preloader"></div> : ""}
-      {props.errorMsg && props.errorMsg !== "" ? (
-        <div className="error">{props.errorMsg}</div>
-      ) : (
-        ""
-      )}
-    </div>
+    <>
+      {isLoading ? <Loader /> : ""}
+      {errorMsg && errorMsg !== "" && <ToastContainer autoClose={8000} />}
+    </>
   );
 }
 

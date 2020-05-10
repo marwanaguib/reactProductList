@@ -2,10 +2,12 @@ import React from "react";
 
 import MainTemplate from "../../templates/main";
 
-export default function Home() {
+const Home = () => {
   return (
     <MainTemplate>
       <div>Home Page</div>
     </MainTemplate>
   );
-}
+};
+
+export default Home;

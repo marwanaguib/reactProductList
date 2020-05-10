@@ -1,7 +1,8 @@
 import axios from "axios";
 
-var api = axios.create({
-  baseURL: process.env.API_URL,
+const baseURL = "https://jsonplaceholder.typicode.com";
+const api = axios.create({
+  baseURL: baseURL,
   headers: {
     common: {
       Accept: "application/json",

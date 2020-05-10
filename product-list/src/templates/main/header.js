@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import { MainHeader, Container } from "./style";
 
-export default function Header(props) {
+const Header = () => {
   return (
     <MainHeader>
       <Container>
@@ -20,4 +20,6 @@ export default function Header(props) {
       </Container>
     </MainHeader>
   );
-}
+};
+
+export default Header;

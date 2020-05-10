@@ -5,7 +5,7 @@ import Footer from "./footer";
 import Interceptor from "../../utils/axios/interceptors";
 import { Container } from "./style";
 
-export default function MainTemplate(props) {
+const MainTemplate = (props) => {
   const childrens = React.Children.map(props.children, (child) => {
     return React.cloneElement(child, { ...child.props });
   });
@@ -17,4 +17,6 @@ export default function MainTemplate(props) {
       <Footer></Footer>
     </div>
   );
-}
+};
+
+export default MainTemplate;
