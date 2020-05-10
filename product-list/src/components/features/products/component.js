@@ -11,10 +11,11 @@ const ProductsList = ({
   products,
   count,
   pageIndex,
+  filters,
 }) => {
   useEffect(() => {
-    getProducts(pageIndex);
-  }, [getProducts, pageIndex]);
+    getProducts(pageIndex, filters);
+  }, [getProducts, pageIndex, filters]);
   return (
     <Row>
       <FirstColumn>

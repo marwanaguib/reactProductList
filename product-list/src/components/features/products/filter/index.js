@@ -1,7 +1,4 @@
-import React from "react";
+import component from "./component";
+import container from "./container";
 
-const Filter = () => {
-  return <div>test</div>;
-};
-
-export default Filter;
+export default container(component);

@@ -10,6 +10,7 @@ function mapStateToProps(state) {
     products: state.products.items,
     count: state.products.count,
     pageIndex: state.products.pageIndex,
+    filters: state.products.filters,
   };
 }
 

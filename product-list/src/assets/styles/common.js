@@ -1,5 +1,7 @@
 import styled, { createGlobalStyle } from "styled-components";
 
+import { colors } from "./var";
+
 export const GlobalStyle = createGlobalStyle`
 body {
   margin: 0;
@@ -7,6 +9,7 @@ body {
 }
 *{
   box-sizing:border-box;
+  outline:none;
 }
 `;
 
@@ -64,4 +67,28 @@ export const DFlex = styled.div`
   display: flex;
   justify-content: ${(props) => props.justify};
   align-items: ${(props) => props.align};
+`;
+
+export const InputForm = styled.form`
+  display: flex;
+  margin: 0 0 10px;
+
+  input[type] {
+    width: 70%;
+    padding: 5px 10px;
+  }
+  select {
+    width: 100%;
+    padding: 5px 10px;
+  }
+
+  input[type="submit"] {
+    width: calc(30% - 5px);
+    margin: 0 0 0 5px;
+    padding: 0;
+    border: 0;
+    background: ${colors.blue};
+    color: ${colors.white};
+    cursor: pointer;
+  }
 `;
