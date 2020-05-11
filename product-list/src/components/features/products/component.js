@@ -4,6 +4,7 @@ import List from "./list";
 import Pagnination from "./pagination";
 import Filter from "./filter";
 import { Row, FirstColumn, SecondColumn } from "./style";
+import { pageCount } from "../../../constants/products";
 
 const ProductsList = ({
   getProducts,
@@ -14,7 +15,7 @@ const ProductsList = ({
   filters,
 }) => {
   useEffect(() => {
-    getProducts(pageIndex, filters);
+    getProducts(pageIndex, pageCount, filters);
   }, [getProducts, pageIndex, filters]);
   return (
     <Row>

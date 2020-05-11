@@ -16,7 +16,7 @@ const Pagnination = ({ setPageIndex, count, pageIndex }) => {
         );
       } else {
         items.push(
-          <li key={`page${i}`} onClick={() => setPageIndex(i + 1)}>
+          <li key={`page${i}`} onClick={() => setPageIndex(i)}>
             {i + 1}
           </li>
         );

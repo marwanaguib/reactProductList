@@ -12,37 +12,41 @@ const List = ({ products }) => {
 
   return (
     <Row>
-      {products.map((item) => {
-        return (
-          <Column key={item.name}>
-            <DFlex justify="space-between">
-              <ProductTitle>{item.name}</ProductTitle>
-              {item.isActive ? (
-                <div>
-                  <s>
+      {products.length > 0 ? (
+        products.map((item) => {
+          return (
+            <Column key={item.id}>
+              <DFlex justify="space-between">
+                <ProductTitle>{item.name}</ProductTitle>
+                {item.isActive === 1 ? (
+                  <div>
+                    <s>
+                      {item.price}
+                      {currency}
+                    </s>
+                  </div>
+                ) : (
+                  <div>
                     {item.price}
                     {currency}
-                  </s>
-                </div>
-              ) : (
-                <div>
-                  {item.price}
-                  {currency}
-                </div>
-              )}
-            </DFlex>
-            {item.isActive && (
-              <DFlex justify="flex-end">
-                <Discount>&darr; {item.promo}</Discount>
-                <div>
-                  {calcPriceDiscount(item.promo, item.price)}
-                  {currency}
-                </div>
+                  </div>
+                )}
               </DFlex>
-            )}
-          </Column>
-        );
-      })}
+              {item.isActive === 1 && (
+                <DFlex justify="flex-end">
+                  <Discount>&darr; {item.promo}</Discount>
+                  <div>
+                    {calcPriceDiscount(item.promo, item.price)}
+                    {currency}
+                  </div>
+                </DFlex>
+              )}
+            </Column>
+          );
+        })
+      ) : (
+        <h4>No Products Found</h4>
+      )}
     </Row>
   );
 };

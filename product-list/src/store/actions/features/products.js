@@ -12,12 +12,12 @@ export const getProductsSuccess = (payload) => {
   };
 };
 
-export const getProductsAPI = (index, filters) => (dispatch) => {
-  return api.post(`/products`, { pageIndex: index, ...filters });
+export const getProductsAPI = (index, pageCount, filters) => (dispatch) => {
+  return api.post(`/products`, { pageIndex: index, pageCount, ...filters });
 };
 
-export const getProducts = (index, filters) => (dispatch) => {
-  return dispatch(getProductsAPI(index, filters)).then((response) =>
+export const getProducts = (index, pageCount, filters) => (dispatch) => {
+  return dispatch(getProductsAPI(index, pageCount, filters)).then((response) =>
     response ? dispatch(getProductsSuccess(response.data)) : ""
   );
 };

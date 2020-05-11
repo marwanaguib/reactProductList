@@ -8,7 +8,7 @@ import {
 const InitialState = {
   items: [],
   count: 0,
-  pageIndex: 1,
+  pageIndex: 0,
   departments: [],
   filters: {},
 };
