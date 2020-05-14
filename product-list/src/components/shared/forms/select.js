@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import { InputForm } from "../../../assets/styles/common";
 
@@ -21,5 +22,15 @@ const Select = ({ func, name, id, options }) => {
     </InputForm>
   );
 };
-
+Select.propTypes = {
+  func: PropTypes.func.isRequired,
+  name: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+  options: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      name: PropTypes.string.isRequired,
+    })
+  ),
+};
 export default Select;

@@ -1,4 +1,5 @@
 import React, { useEffect, useCallback } from "react";
+import PropTypes from "prop-types";
 
 import Input from "../../../shared/forms/input";
 import Select from "../../../shared/forms/select";
@@ -33,6 +34,17 @@ const Filter = ({ getDepartments, setFilter, departments }) => {
       })}
     </>
   );
+};
+
+Filter.propTypes = {
+  getDepartments: PropTypes.func.isRequired,
+  setFilter: PropTypes.func.isRequired,
+  departments: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      name: PropTypes.string.isRequired,
+    })
+  ),
 };
 
 export default Filter;

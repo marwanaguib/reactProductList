@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import PropTypes from "prop-types";
 
 import { InputForm } from "../../../assets/styles/common";
 
@@ -16,6 +17,13 @@ const Input = ({ func, name, id, type }) => {
       <input type="submit" value="Search" />
     </InputForm>
   );
+};
+
+Input.propTypes = {
+  func: PropTypes.func.isRequired,
+  name: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
 };
 
 export default Input;

@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import { Row, Column, ProductTitle, Discount } from "../style";
 import { DFlex } from "../../../../assets/styles/common";
@@ -49,6 +50,18 @@ const List = ({ products }) => {
       )}
     </Row>
   );
+};
+
+List.propTypes = {
+  products: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      name: PropTypes.string.isRequired,
+      price: PropTypes.string.isRequired,
+      promo: PropTypes.string,
+      isActive: PropTypes.number,
+    })
+  ),
 };
 
 export default List;
