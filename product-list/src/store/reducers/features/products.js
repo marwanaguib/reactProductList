@@ -6,7 +6,7 @@ import {
 } from "../../actions/features/products";
 
 const InitialState = {
-  items: [],
+  items: null,
   count: 0,
   pageIndex: 0,
   departments: [],

@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`products pagination Pagnination render nothing if count === 0 1`] = `""`;
+
+exports[`products pagination render Pagnination to match snapshot 1`] = `
+<styled.ul>
+  <li
+    key="page0"
+    onClick={[Function]}
+  >
+    1
+  </li>
+  <li
+    key="page1"
+    onClick={[Function]}
+  >
+    2
+  </li>
+</styled.ul>
+`;

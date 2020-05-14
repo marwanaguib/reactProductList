@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`inputForm render inputForm to match snapshot 1`] = `
+<styled.form
+  onSubmit={[Function]}
+>
+  <input
+    placeholder="test"
+    type="text"
+  />
+  <input
+    type="submit"
+    value="Search"
+  />
+</styled.form>
+`;

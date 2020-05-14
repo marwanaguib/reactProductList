@@ -1,0 +1,205 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`products filter functions called getDepartments has been called once 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <Filter
+    departments={
+      Array [
+        Object {
+          "id": 1,
+          "name": "Electronics",
+        },
+        Object {
+          "id": 2,
+          "name": "Toys",
+        },
+        Object {
+          "id": 3,
+          "name": "Cloths",
+        },
+      ]
+    }
+    getDepartments={
+      [MockFunction] {
+        "calls": Array [
+          Array [],
+        ],
+        "results": Array [
+          Object {
+            "type": "return",
+            "value": undefined,
+          },
+        ],
+      }
+    }
+    setFilter={[MockFunction]}
+  >
+    <h3>
+      Filter Products
+    </h3>
+    <Select
+      func={[MockFunction]}
+      id="department"
+      key="Departments"
+      name="Departments"
+      options={
+        Array [
+          Object {
+            "id": 1,
+            "name": "Electronics",
+          },
+          Object {
+            "id": 2,
+            "name": "Toys",
+          },
+          Object {
+            "id": 3,
+            "name": "Cloths",
+          },
+        ]
+      }
+      type="select"
+    >
+      <styled.form>
+        <form
+          className="sc-AxhCb cNNKgv"
+        >
+          <select
+            onChange={[Function]}
+          >
+            <option
+              value=""
+            >
+              Select Departments
+            </option>
+            <option
+              key="1"
+              value={1}
+            >
+              Electronics
+            </option>
+            <option
+              key="2"
+              value={2}
+            >
+              Toys
+            </option>
+            <option
+              key="3"
+              value={3}
+            >
+              Cloths
+            </option>
+          </select>
+        </form>
+      </styled.form>
+    </Select>
+    <Input
+      func={[MockFunction]}
+      id="promo"
+      key="Promo Code"
+      name="Promo Code"
+      type="text"
+    >
+      <styled.form
+        onSubmit={[Function]}
+      >
+        <form
+          className="sc-AxhCb cNNKgv"
+          onSubmit={[Function]}
+        >
+          <input
+            placeholder="Promo Code"
+            type="text"
+          />
+          <input
+            type="submit"
+            value="Search"
+          />
+        </form>
+      </styled.form>
+    </Input>
+    <Input
+      func={[MockFunction]}
+      id="search"
+      key="Product Name"
+      name="Product Name"
+      type="text"
+    >
+      <styled.form
+        onSubmit={[Function]}
+      >
+        <form
+          className="sc-AxhCb cNNKgv"
+          onSubmit={[Function]}
+        >
+          <input
+            placeholder="Product Name"
+            type="text"
+          />
+          <input
+            type="submit"
+            value="Search"
+          />
+        </form>
+      </styled.form>
+    </Input>
+  </Filter>
+</Provider>
+`;
+
+exports[`products filter render Filter to match snapshot 1`] = `
+<Fragment>
+  <h3>
+    Filter Products
+  </h3>
+  <Select
+    func={[MockFunction]}
+    id="department"
+    key="Departments"
+    name="Departments"
+    options={
+      Array [
+        Object {
+          "id": 1,
+          "name": "Electronics",
+        },
+        Object {
+          "id": 2,
+          "name": "Toys",
+        },
+        Object {
+          "id": 3,
+          "name": "Cloths",
+        },
+      ]
+    }
+    type="select"
+  />
+  <Input
+    func={[MockFunction]}
+    id="promo"
+    key="Promo Code"
+    name="Promo Code"
+    type="text"
+  />
+  <Input
+    func={[MockFunction]}
+    id="search"
+    key="Product Name"
+    name="Product Name"
+    type="text"
+  />
+</Fragment>
+`;

@@ -1,0 +1,592 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`products getProducts has been called once with correct params 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <ProductsList
+    count={7}
+    filters={Object {}}
+    getProducts={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            0,
+            6,
+            Object {},
+          ],
+        ],
+        "results": Array [
+          Object {
+            "type": "return",
+            "value": undefined,
+          },
+        ],
+      }
+    }
+    pageIndex={0}
+    products={
+      Array [
+        Object {
+          "id": 1,
+          "isActive": 1,
+          "name": "Product1",
+          "price": "100",
+          "promo": "10%",
+        },
+        Object {
+          "id": 2,
+          "isActive": 0,
+          "name": "Product2",
+          "price": "110",
+          "promo": "10%",
+        },
+        Object {
+          "id": 3,
+          "isActive": 1,
+          "name": "Product3",
+          "price": "80",
+          "promo": "10%",
+        },
+        Object {
+          "id": 4,
+          "isActive": 1,
+          "name": "Product4",
+          "price": "100",
+          "promo": "10%",
+        },
+        Object {
+          "id": 5,
+          "isActive": 1,
+          "name": "Product5",
+          "price": "110",
+          "promo": "10%",
+        },
+        Object {
+          "id": 6,
+          "isActive": 1,
+          "name": "Product6",
+          "price": "100",
+          "promo": "10%",
+        },
+        Object {
+          "id": 7,
+          "isActive": 1,
+          "name": "Product7",
+          "price": "100",
+          "promo": "10%",
+        },
+      ]
+    }
+    setPageIndex={[MockFunction]}
+  >
+    <styled.div>
+      <div
+        className="sc-AxjAm ljFmqo"
+      >
+        <styled.div>
+          <div
+            className="sc-AxiKw hbJftE"
+          >
+            <Component>
+              <div />
+            </Component>
+          </div>
+        </styled.div>
+        <styled.div>
+          <div
+            className="sc-AxhCb hWKplh"
+          >
+            <List
+              products={
+                Array [
+                  Object {
+                    "id": 1,
+                    "isActive": 1,
+                    "name": "Product1",
+                    "price": "100",
+                    "promo": "10%",
+                  },
+                  Object {
+                    "id": 2,
+                    "isActive": 0,
+                    "name": "Product2",
+                    "price": "110",
+                    "promo": "10%",
+                  },
+                  Object {
+                    "id": 3,
+                    "isActive": 1,
+                    "name": "Product3",
+                    "price": "80",
+                    "promo": "10%",
+                  },
+                  Object {
+                    "id": 4,
+                    "isActive": 1,
+                    "name": "Product4",
+                    "price": "100",
+                    "promo": "10%",
+                  },
+                  Object {
+                    "id": 5,
+                    "isActive": 1,
+                    "name": "Product5",
+                    "price": "110",
+                    "promo": "10%",
+                  },
+                  Object {
+                    "id": 6,
+                    "isActive": 1,
+                    "name": "Product6",
+                    "price": "100",
+                    "promo": "10%",
+                  },
+                  Object {
+                    "id": 7,
+                    "isActive": 1,
+                    "name": "Product7",
+                    "price": "100",
+                    "promo": "10%",
+                  },
+                ]
+              }
+            >
+              <styled.div>
+                <div
+                  className="sc-AxjAm ljFmqo"
+                >
+                  <styled.div
+                    key="1"
+                  >
+                    <div
+                      className="sc-AxirZ kFiZhP"
+                    >
+                      <styled.div
+                        justify="space-between"
+                      >
+                        <div
+                          className="sc-fzozJi jQBOTH"
+                        >
+                          <styled.h2>
+                            <h2
+                              className="sc-AxhUy eiLczZ"
+                            >
+                              Product1
+                            </h2>
+                          </styled.h2>
+                          <div>
+                            <s>
+                              100
+                              $
+                            </s>
+                          </div>
+                        </div>
+                      </styled.div>
+                      <styled.div
+                        justify="flex-end"
+                      >
+                        <div
+                          className="sc-fzozJi fPtAkR"
+                        >
+                          <styled.div>
+                            <div
+                              className="sc-AxgMl kgugWu"
+                            >
+                              ↓ 
+                              10%
+                            </div>
+                          </styled.div>
+                          <div>
+                            90
+                            $
+                          </div>
+                        </div>
+                      </styled.div>
+                    </div>
+                  </styled.div>
+                  <styled.div
+                    key="2"
+                  >
+                    <div
+                      className="sc-AxirZ kFiZhP"
+                    >
+                      <styled.div
+                        justify="space-between"
+                      >
+                        <div
+                          className="sc-fzozJi jQBOTH"
+                        >
+                          <styled.h2>
+                            <h2
+                              className="sc-AxhUy eiLczZ"
+                            >
+                              Product2
+                            </h2>
+                          </styled.h2>
+                          <div>
+                            110
+                            $
+                          </div>
+                        </div>
+                      </styled.div>
+                    </div>
+                  </styled.div>
+                  <styled.div
+                    key="3"
+                  >
+                    <div
+                      className="sc-AxirZ kFiZhP"
+                    >
+                      <styled.div
+                        justify="space-between"
+                      >
+                        <div
+                          className="sc-fzozJi jQBOTH"
+                        >
+                          <styled.h2>
+                            <h2
+                              className="sc-AxhUy eiLczZ"
+                            >
+                              Product3
+                            </h2>
+                          </styled.h2>
+                          <div>
+                            <s>
+                              80
+                              $
+                            </s>
+                          </div>
+                        </div>
+                      </styled.div>
+                      <styled.div
+                        justify="flex-end"
+                      >
+                        <div
+                          className="sc-fzozJi fPtAkR"
+                        >
+                          <styled.div>
+                            <div
+                              className="sc-AxgMl kgugWu"
+                            >
+                              ↓ 
+                              10%
+                            </div>
+                          </styled.div>
+                          <div>
+                            72
+                            $
+                          </div>
+                        </div>
+                      </styled.div>
+                    </div>
+                  </styled.div>
+                  <styled.div
+                    key="4"
+                  >
+                    <div
+                      className="sc-AxirZ kFiZhP"
+                    >
+                      <styled.div
+                        justify="space-between"
+                      >
+                        <div
+                          className="sc-fzozJi jQBOTH"
+                        >
+                          <styled.h2>
+                            <h2
+                              className="sc-AxhUy eiLczZ"
+                            >
+                              Product4
+                            </h2>
+                          </styled.h2>
+                          <div>
+                            <s>
+                              100
+                              $
+                            </s>
+                          </div>
+                        </div>
+                      </styled.div>
+                      <styled.div
+                        justify="flex-end"
+                      >
+                        <div
+                          className="sc-fzozJi fPtAkR"
+                        >
+                          <styled.div>
+                            <div
+                              className="sc-AxgMl kgugWu"
+                            >
+                              ↓ 
+                              10%
+                            </div>
+                          </styled.div>
+                          <div>
+                            90
+                            $
+                          </div>
+                        </div>
+                      </styled.div>
+                    </div>
+                  </styled.div>
+                  <styled.div
+                    key="5"
+                  >
+                    <div
+                      className="sc-AxirZ kFiZhP"
+                    >
+                      <styled.div
+                        justify="space-between"
+                      >
+                        <div
+                          className="sc-fzozJi jQBOTH"
+                        >
+                          <styled.h2>
+                            <h2
+                              className="sc-AxhUy eiLczZ"
+                            >
+                              Product5
+                            </h2>
+                          </styled.h2>
+                          <div>
+                            <s>
+                              110
+                              $
+                            </s>
+                          </div>
+                        </div>
+                      </styled.div>
+                      <styled.div
+                        justify="flex-end"
+                      >
+                        <div
+                          className="sc-fzozJi fPtAkR"
+                        >
+                          <styled.div>
+                            <div
+                              className="sc-AxgMl kgugWu"
+                            >
+                              ↓ 
+                              10%
+                            </div>
+                          </styled.div>
+                          <div>
+                            99
+                            $
+                          </div>
+                        </div>
+                      </styled.div>
+                    </div>
+                  </styled.div>
+                  <styled.div
+                    key="6"
+                  >
+                    <div
+                      className="sc-AxirZ kFiZhP"
+                    >
+                      <styled.div
+                        justify="space-between"
+                      >
+                        <div
+                          className="sc-fzozJi jQBOTH"
+                        >
+                          <styled.h2>
+                            <h2
+                              className="sc-AxhUy eiLczZ"
+                            >
+                              Product6
+                            </h2>
+                          </styled.h2>
+                          <div>
+                            <s>
+                              100
+                              $
+                            </s>
+                          </div>
+                        </div>
+                      </styled.div>
+                      <styled.div
+                        justify="flex-end"
+                      >
+                        <div
+                          className="sc-fzozJi fPtAkR"
+                        >
+                          <styled.div>
+                            <div
+                              className="sc-AxgMl kgugWu"
+                            >
+                              ↓ 
+                              10%
+                            </div>
+                          </styled.div>
+                          <div>
+                            90
+                            $
+                          </div>
+                        </div>
+                      </styled.div>
+                    </div>
+                  </styled.div>
+                  <styled.div
+                    key="7"
+                  >
+                    <div
+                      className="sc-AxirZ kFiZhP"
+                    >
+                      <styled.div
+                        justify="space-between"
+                      >
+                        <div
+                          className="sc-fzozJi jQBOTH"
+                        >
+                          <styled.h2>
+                            <h2
+                              className="sc-AxhUy eiLczZ"
+                            >
+                              Product7
+                            </h2>
+                          </styled.h2>
+                          <div>
+                            <s>
+                              100
+                              $
+                            </s>
+                          </div>
+                        </div>
+                      </styled.div>
+                      <styled.div
+                        justify="flex-end"
+                      >
+                        <div
+                          className="sc-fzozJi fPtAkR"
+                        >
+                          <styled.div>
+                            <div
+                              className="sc-AxgMl kgugWu"
+                            >
+                              ↓ 
+                              10%
+                            </div>
+                          </styled.div>
+                          <div>
+                            90
+                            $
+                          </div>
+                        </div>
+                      </styled.div>
+                    </div>
+                  </styled.div>
+                </div>
+              </styled.div>
+            </List>
+            <Pagnination
+              count={7}
+              pageIndex={0}
+              setPageIndex={[MockFunction]}
+            >
+              <styled.ul>
+                <ul
+                  className="sc-AxheI fKhVPr"
+                >
+                  <li
+                    key="page0"
+                    onClick={[Function]}
+                  >
+                    1
+                  </li>
+                  <li
+                    key="page1"
+                    onClick={[Function]}
+                  >
+                    2
+                  </li>
+                </ul>
+              </styled.ul>
+            </Pagnination>
+          </div>
+        </styled.div>
+      </div>
+    </styled.div>
+  </ProductsList>
+</Provider>
+`;
+
+exports[`products render productsList to match snapshot 1`] = `
+<styled.div>
+  <styled.div>
+    <Component />
+  </styled.div>
+  <styled.div>
+    <List
+      products={
+        Array [
+          Object {
+            "id": 1,
+            "isActive": 1,
+            "name": "Product1",
+            "price": "100",
+            "promo": "10%",
+          },
+          Object {
+            "id": 2,
+            "isActive": 0,
+            "name": "Product2",
+            "price": "110",
+            "promo": "10%",
+          },
+          Object {
+            "id": 3,
+            "isActive": 1,
+            "name": "Product3",
+            "price": "80",
+            "promo": "10%",
+          },
+          Object {
+            "id": 4,
+            "isActive": 1,
+            "name": "Product4",
+            "price": "100",
+            "promo": "10%",
+          },
+          Object {
+            "id": 5,
+            "isActive": 1,
+            "name": "Product5",
+            "price": "110",
+            "promo": "10%",
+          },
+          Object {
+            "id": 6,
+            "isActive": 1,
+            "name": "Product6",
+            "price": "100",
+            "promo": "10%",
+          },
+          Object {
+            "id": 7,
+            "isActive": 1,
+            "name": "Product7",
+            "price": "100",
+            "promo": "10%",
+          },
+        ]
+      }
+    />
+    <Pagnination
+      count={7}
+      pageIndex={0}
+      setPageIndex={[MockFunction]}
+    />
+  </styled.div>
+</styled.div>
+`;

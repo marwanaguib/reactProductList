@@ -23,7 +23,7 @@ const ProductsList = ({
         <Filter />
       </FirstColumn>
       <SecondColumn>
-        <List products={products} />
+        {products && <List products={products} />}
         <Pagnination
           count={count}
           setPageIndex={setPageIndex}
