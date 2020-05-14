@@ -9,6 +9,10 @@
 - Simple component style using styled-components.
 - Used react hooks in all components except ErrorBoundary.
 
+## API URL
+
+API URL by default is "http://localhost:3000", if you run backend in different port, you can change it on `utils/axios/index.js`
+
 ## Available Scripts
 
 In the project directory, you can run:
