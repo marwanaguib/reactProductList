@@ -9,7 +9,7 @@ const Pagnination = ({ setPageIndex, count, pageIndex }) => {
     const page = Math.ceil(count / pageCount);
     const items = [];
     for (let i = 0; i < page; i++) {
-      if (pageIndex === i + 1) {
+      if (pageIndex === i) {
         items.push(
           <li key={`page${i}`} className="active">
             {i + 1}

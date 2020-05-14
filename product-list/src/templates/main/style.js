@@ -38,6 +38,6 @@ export const MainFooter = styled.footer`
 `;
 
 export const Container = styled.section`
-  max-width: 80%;
+  width: 80%;
   margin: 0 auto;
 `;

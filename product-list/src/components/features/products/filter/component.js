@@ -13,12 +13,12 @@ const Filter = ({ getDepartments, setFilter, departments }) => {
     return [
       {
         name: "Departments",
-        id: "department",
+        elemKey: "department",
         type: "select",
         options: [...departments],
       },
-      { name: "Promo Code", id: "promo", type: "text" },
-      { name: "Product Name", id: "search", type: "text" },
+      { name: "Promo Code", elemKey: "promo", type: "text" },
+      { name: "Product Name", elemKey: "search", type: "text" },
     ];
   }, [departments]);
 

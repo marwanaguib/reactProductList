@@ -499,8 +499,8 @@ exports[`products getProducts has been called once with correct params 1`] = `
                   className="sc-AxheI fKhVPr"
                 >
                   <li
+                    className="active"
                     key="page0"
-                    onClick={[Function]}
                   >
                     1
                   </li>

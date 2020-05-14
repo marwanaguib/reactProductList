@@ -6,7 +6,7 @@ import Select from "../select";
 const props = {
   func: jest.fn(),
   name: "test",
-  id: 1,
+  elemKey: "department",
   options: [{ id: 1, name: "option1" }],
 };
 

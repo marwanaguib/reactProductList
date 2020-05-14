@@ -3,12 +3,12 @@ import PropTypes from "prop-types";
 
 import { InputForm } from "../../../assets/styles/common";
 
-const Input = ({ func, name, id, type }) => {
+const Input = ({ func, name, elemKey, type }) => {
   const inputElement = useRef(null);
   const handleSubmit = (e) => {
     e.preventDefault();
     let request = {};
-    request[id] = inputElement.current.value;
+    request[elemKey] = inputElement.current.value;
     func(request);
   };
   return (
@@ -22,7 +22,7 @@ const Input = ({ func, name, id, type }) => {
 Input.propTypes = {
   func: PropTypes.func.isRequired,
   name: PropTypes.string.isRequired,
-  id: PropTypes.string.isRequired,
+  elemKey: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
 };
 

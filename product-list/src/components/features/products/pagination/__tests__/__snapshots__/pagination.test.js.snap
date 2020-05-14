@@ -5,8 +5,8 @@ exports[`products pagination Pagnination render nothing if count === 0 1`] = `""
 exports[`products pagination render Pagnination to match snapshot 1`] = `
 <styled.ul>
   <li
+    className="active"
     key="page0"
-    onClick={[Function]}
   >
     1
   </li>

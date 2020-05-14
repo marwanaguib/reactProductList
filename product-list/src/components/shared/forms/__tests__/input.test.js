@@ -6,7 +6,7 @@ import Input from "../input";
 const props = {
   func: jest.fn(),
   name: "test",
-  id: 1,
+  elemKey: "code",
   type: "text",
 };
 

@@ -10,12 +10,14 @@ const MainTemplate = (props) => {
     return React.cloneElement(child, { ...child.props });
   });
   return (
-    <div className="wrapper">
-      <Interceptor></Interceptor>
-      <Header></Header>
-      <Container>{childrens}</Container>
+    <>
+      <div>
+        <Interceptor></Interceptor>
+        <Header></Header>
+        <Container>{childrens}</Container>
+      </div>
       <Footer></Footer>
-    </div>
+    </>
   );
 };
 

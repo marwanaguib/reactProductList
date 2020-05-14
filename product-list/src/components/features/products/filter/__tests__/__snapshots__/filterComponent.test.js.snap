@@ -49,8 +49,8 @@ exports[`products filter functions called getDepartments has been called once 1`
       Filter Products
     </h3>
     <Select
+      elemKey="department"
       func={[MockFunction]}
-      id="department"
       key="Departments"
       name="Departments"
       options={
@@ -106,8 +106,8 @@ exports[`products filter functions called getDepartments has been called once 1`
       </styled.form>
     </Select>
     <Input
+      elemKey="promo"
       func={[MockFunction]}
-      id="promo"
       key="Promo Code"
       name="Promo Code"
       type="text"
@@ -131,8 +131,8 @@ exports[`products filter functions called getDepartments has been called once 1`
       </styled.form>
     </Input>
     <Input
+      elemKey="search"
       func={[MockFunction]}
-      id="search"
       key="Product Name"
       name="Product Name"
       type="text"
@@ -165,8 +165,8 @@ exports[`products filter render Filter to match snapshot 1`] = `
     Filter Products
   </h3>
   <Select
+    elemKey="department"
     func={[MockFunction]}
-    id="department"
     key="Departments"
     name="Departments"
     options={
@@ -188,15 +188,15 @@ exports[`products filter render Filter to match snapshot 1`] = `
     type="select"
   />
   <Input
+    elemKey="promo"
     func={[MockFunction]}
-    id="promo"
     key="Promo Code"
     name="Promo Code"
     type="text"
   />
   <Input
+    elemKey="search"
     func={[MockFunction]}
-    id="search"
     key="Product Name"
     name="Product Name"
     type="text"

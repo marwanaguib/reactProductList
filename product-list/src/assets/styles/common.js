@@ -3,9 +3,17 @@ import styled, { createGlobalStyle } from "styled-components";
 import { colors } from "./var";
 
 export const GlobalStyle = createGlobalStyle`
+html,body,#root{
+  height:100%;
+}
 body {
   margin: 0;
   padding:0;
+}
+#root{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
 }
 *{
   box-sizing:border-box;
